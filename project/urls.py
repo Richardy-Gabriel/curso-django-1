@@ -23,5 +23,5 @@ urlpatterns = [
     path('', include('recipes.urls')),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  #  Carrega a imagem no site.
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  #  Carrega a imagem no site. # noqa : E501
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
